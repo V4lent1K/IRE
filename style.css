@@ -1,0 +1,458 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/********** RESET **********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********** FIN RESET **********/
+
+/********** Mise en Page **********/
+
+body {
+	width: 1900px;
+	background: url("img/bkgd_page.jpg") no-repeat top center;
+	background-color: #F6F6F6;
+}
+
+#wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding-top: 20px;
+}
+
+#wrapper1 {
+	width: 1024px;
+	margin: 0 auto;
+	background-color: #F6F6F6;
+	margin-top: 100px;
+	padding-top: 20px;
+}
+#main-nav {
+	color: #FFFFFF;
+}
+
+#slogan {
+	color: #FFFFFF;
+	margin-top: 150px;
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+.clearfix ::after {
+	clear: both;
+	content: "";
+	display: block;		
+}
+
+.meta {
+	color: #AAAAAA;
+}
+
+.meta-auteur {
+	color: #38B4B4;
+}
+
+.meta-date {
+	font: italic;
+	color: #AAAAAA;
+}
+
+/********** Fin mise en Page **********/
+
+/********** Navigation **********/
+
+nav li {
+	display: inline-block;
+	border: 1px dashed #F6F6F6;
+	margin: -2px;
+	height: 36px;
+}
+
+.nav-link a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+	line-height: 36px;
+	padding: 10px;
+	height: 10px;
+}
+
+.nav-link a:hover {
+	background-color: #FFFFFF;
+	color: blue;
+	padding: 10px;
+}
+
+/********** Fin Navigation **********/
+
+/********** Slogan **********/
+
+#slogan h1 {
+	font-weight: bold;
+	font-size: 5em;
+	padding: 5px;
+}
+
+#slogan h2 {
+	font-weight: bold;
+	font-size: 2.5em;
+	padding: 10px;
+}
+
+#slogan p {
+	font-size: 1em;
+	padding: 10px;
+}
+
+/********** Fin Slogan **********/
+
+/********** Lien **********/
+
+.colonned a {
+	text-decoration: none;
+	color: #A22755;
+}
+
+.colonned a:hover {
+	text-decoration: none;
+	color: #CCCCCC;
+}
+
+.vignette a {
+	text-decoration: none;
+	color: #A22755;
+}
+
+.vignette a:hover {
+	text-decoration: none;
+	color: #CCCCCC;
+}
+/********** Fin Lien **********/
+
+/********** Article **********/
+
+
+.article h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+	padding: 10px;
+	margin: 5px;
+}
+
+.article p {
+	padding: 5px;
+	margin: 0 0 0 0;
+}
+
+.article img {
+	margin: 10px;
+	border: 1px solid #000000;
+	position: relative;
+}
+
+img .article {
+	width: 480px;
+	height: 480px;
+	text-align: center;
+	padding: 5px;
+	position: absolute;
+	background-color: #CCCCCC;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+img:hover .article {
+	display: block;
+}
+/********** Fin Article **********/
+
+/********** Colonne gauche **********/
+
+.colonneg {
+	width: 750px;
+	padding-bottom: 100px;
+}
+
+/********** Fin Colonne gauche **********/
+
+/********** Rapport **********/
+
+#rapport2016 {
+	text-align: center;
+	padding: 50px 15px;
+}
+
+#rapport2017 {
+	text-align: center;
+	padding: 15px 15px 20px 15px;
+}
+
+/********** Fin Rapport **********/
+
+/********** Colonne droite **********/
+
+.colonned {
+	width: 250px;
+}
+
+.relative {
+	position: relative
+}
+
+.absolute {
+	position: absolute;
+	top: 500px;
+	right: 450px;
+}
+
+/********** Fin Colonne droite **********/
+
+/********** Saut **********/
+
+#saut {
+	position: relative;
+	margin: 10px;
+}
+#saut .superposition {
+	width: 480px;
+	height: 480px;
+	text-align: center;
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+#saut:hover .superposition {
+	display: block;
+}
+
+.superposition h2 {
+	text-align: center;
+	font-size: 2.5em;
+	color: #FFFFFF;
+	padding: 200px 10px 10px 10px;
+}
+
+.superposition p {
+	font-size: 1em;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 20px;
+}
+
+.superposition a {
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #0c7f06;
+	padding: 10px 25px;
+	
+}
+
+.superposition a:hover {
+	color: #CCCCCC
+}
+
+/********** Fin Saut **********/
+
+/********** Vignettes **********/
+
+.container-vignettes {
+	padding: 11px;
+	width: 550px;
+	height: 500px;
+	position: absolute;
+	right: 400px;
+	top: 1185px
+}
+
+.vignette {
+	border: 5px solid #305a47;
+	background-color: #ddeae4;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	align-items: center;
+	padding: 15px;
+}
+
+/********** Fin Vignettes **********/
+
+#vide {
+	height: 75px;
+}
+
+/********** Formulaire de contact **********/
+
+#contact {
+	border: 5px solid #305a47;
+	background-color: #DDEAE4;
+	margin-top: 50px;
+	padding: 50px 75px;
+	height: 275px;
+}
+
+#contact h2 {
+	font-weight: bold;
+	font-size: 2.5em;
+	padding: 10px;
+	margin-left: 100px;
+}
+
+#nom {
+	margin-top: 10px;
+	margin-left: 100px;
+	width: 650px;
+	height: 20px;
+}
+
+#prenom {
+	margin-top: 10px;
+	margin-left: 100px;
+	width: 303px;
+	height: 20px
+}
+
+#email {
+	margin-top: 10px;
+	width: 340px;
+	height: 20px;
+}
+
+#message {
+	margin-top: 10px;
+	margin-left: 100px;
+	width: 650px;
+	height: 75px
+}
+.submit {
+	width: 650px;
+	height: 25px;
+	text-align: center;
+	border: none;
+	background-color: #305a47;
+	color: #FFFFFF;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+.submit:hover {
+	background-color: #109177;
+}
+
+.submit:active{
+	position: relative;
+	top: 1px;
+}
+/********** Formulaire de contact **********/
+
+/********** Navigation Bas de page **********/
+
+footer {
+	margin-top: 50px;
+	padding: 10px;
+	height: 20px;
+	width: 1900px;
+	background-color: #305a47;
+	text-align: center;
+	text-decoration: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+footer li {
+	background-color: #305a47;
+	display: inline-block;
+}
+
+.nav-foot {
+	margin-top: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	align-content: center;
+	font-size: 1em;
+	line-height: 0px;
+	padding: 10px;
+}
+
+.nav-foot:hover {
+	color: grey;
+}
+
+/********** Fin Navigation Bas de page **********/
